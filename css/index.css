@@ -19,6 +19,17 @@ li {
     list-style: none;
 }
 
+.movie-button{
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgb(251, 207, 174) 0%, rgb(247, 130, 4) 100%);
+    border: 0;
+    color: #fff;
+    font-size: .9rem;
+}
+
+
 /* HEADER */
 .header .container-md{
     
@@ -80,6 +91,12 @@ li {
     transition: all .5s;
 }
 
+.navbar-toggler{
+    color: orange;
+}
+
+
+
 @media only screen  and (max-width:768px) {
     .header  img {
         width: 180px;
@@ -94,10 +111,10 @@ li {
     .header  img {
         width: 180px;
     }
-    .header .navbar .collapse .navbar-nav{
+    .header .navbar .collapse .navbar-nav .nav-item{
         background-color: rgba(0, 0, 0, 0.793);
         text-align: center;
-        transition: all 0;
+        transition: all .5;
     }
     .header  nav.navbar li {
         border-bottom: none;
@@ -117,8 +134,7 @@ li {
         color: orange;
     }
     .navbar-toggler:focus{
-        border: none !important;
-        /* background-color: aqua; */
+        box-shadow: none;
     }
 }
 /* CAROUSEL */
@@ -146,17 +162,41 @@ li {
     height:650px;
 
 }
-.carousel-film .carousel-indicators{
-    background-color: rgb(81, 145, 202);
-    justify-content: start;
-}
+
 .carousel-film .carousel-indicators button{
     width: 8px;
     height: 8px;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     background: transparent;
 }
 .carousel-film .carousel-item .carousel-caption{
     left: 0;
+}
+
+.play-trailer span{
+    font-size: .8rem;
+    padding: 15px;
+}
+
+.carousel-film .carousel-caption{
+    font-family: "Roboto Condensed", sans-serif;
+}
+.carousel-film .carousel-caption h3{
+    color: rgb(248, 191, 85);
+    font-size:.9rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    
+}
+.carousel-film .carousel-caption .film-name{
+    font-size: 3.3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.carousel-film .carousel-caption p{
+    text-align: left;
+}
+.carousel-film .carousel-indicators button.active{
+    background-color: #fff;
 }
